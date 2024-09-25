@@ -35,7 +35,8 @@ class Program
             Console.WriteLine("1. Empresas");
             Console.WriteLine("2. Personas");
             Console.WriteLine("3. Clientes");
-            Console.WriteLine("4. Salir");
+            Console.WriteLine("4. Vendedores");
+            Console.WriteLine("5. Salir");
             Console.Write("Seleccione una opción: ");
             var option = Console.ReadLine();
 
@@ -54,6 +55,10 @@ class Program
                     clienteView.ShowMenu();
                     break;
                 case "4":
+                    var VendedorView = new VendedorView();
+                    VendedorView.ShowMenu();
+                    break;    
+                case "5":
                     Console.WriteLine("Saliendo...");
                     return;
                 default:
