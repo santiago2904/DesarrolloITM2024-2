@@ -11,6 +11,7 @@ public class AppDbContext : DbContext
 
     public DbSet<Persona> Personas { get; set; } // Tabla Personas
     public DbSet<Cliente> Clientes { get; set; } // Tabla Clientes
+    public DbSet<Vendedor> Vendedores { get; set; } // Tabla Vendedor
     public DbSet<Empresa> Empresas { get; set; } // Tabla Empresas
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -55,8 +55,8 @@ class Program
                     clienteView.ShowMenu();
                     break;
                 case "4":
-                    var VendedorView = new VendedorView();
-                    VendedorView.ShowMenu();
+                    //var VendedorView = new VendedorView();
+                    //VendedorView.ShowMenu();
                     break;    
                 case "5":
                     Console.WriteLine("Saliendo...");
