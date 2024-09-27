@@ -57,8 +57,8 @@ class Program
                     clienteView.ShowMenu();
                     break;
                 case "4":
-                    //var VendedorView = new VendedorView();
-                    //VendedorView.ShowMenu();
+                    var vendedorView = new VendedorView();
+                    vendedorView.ShowMenu();
                     break;
                 case "5":
                     var productosView = new ProductoView();

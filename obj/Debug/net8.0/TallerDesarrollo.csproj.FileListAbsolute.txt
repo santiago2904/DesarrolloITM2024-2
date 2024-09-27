@@ -128,3 +128,4 @@
 /home/sapalacioa/Documents/proyectos/ITM/TallerDesarrollo/obj/Debug/net8.0/TallerDesarrollo.pdb
 /home/sapalacioa/Documents/proyectos/ITM/TallerDesarrollo/obj/Debug/net8.0/TallerDesarrollo.genruntimeconfig.cache
 /home/sapalacioa/Documents/proyectos/ITM/TallerDesarrollo/obj/Debug/net8.0/ref/TallerDesarrollo.dll
+/home/sapalacioa/Documents/proyectos/ITM/TallerDesarrollo/obj/Debug/net8.0/TallerDesarrollo.sourcelink.json
