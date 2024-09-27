@@ -40,8 +40,7 @@ public class PersonaView
                     Console.WriteLine("Listado de Personas:");
                     foreach (var persona in personas)
                     {
-                        Console.WriteLine(
-                            $"Código: {persona.Codigo}, Email: {persona.Email}, Nombre: {persona.Nombre}, Apellido: {persona.Apellido}");
+                        Console.WriteLine(_personaService.GetInfoPersona(persona));
                     }
 
                     break;

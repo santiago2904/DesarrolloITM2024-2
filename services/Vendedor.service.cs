@@ -52,7 +52,7 @@ public class VendedorService
                 vendedor.Nombre = nuevoNombre;
                 vendedor.Apellido = nuevoApellido;
                 vendedor.Direccion = nuevoDireccion;
-                vendedor.Carne = nuevoCarne
+                vendedor.Carne = nuevoCarne;
                 _context.SaveChanges();
                 Console.WriteLine("Vendedor actualizado con éxito.");
             }
