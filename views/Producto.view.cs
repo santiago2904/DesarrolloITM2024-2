@@ -42,7 +42,7 @@ public class ProductoView
                     Console.WriteLine("Opción no válida. Intente de nuevo.");
                     break;
             }
-        } while (option != 0);
+        } while (option != 5);
     }
 
     private void CreateProducto()
