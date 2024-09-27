@@ -49,7 +49,7 @@ public void UpdateProducto(int codigo, string nuevoNombre, int nuevoStock, doubl
             {
                 producto.Nombre = nuevoNombre;
                 producto.Stock = nuevoStock;
-                producto.Apellido = nuevoValorunitario;
+                producto.Valorunitario = nuevoValorunitario;
                 
                 _context.SaveChanges();
                 Console.WriteLine("EL producto fue actualizado con éxito.");

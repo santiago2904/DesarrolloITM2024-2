@@ -3,33 +3,26 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TallerDesarrollo.models;
 
-
-
 public class ProductosPorFactura
 {
-    private int? cantidad;   
-    private double? subtotal;
+    public ProductosPorFactura( int productoId, int? cantidad = null, double? subtotal = null)
+    {
+        ProductoId = productoId;
+        Cantidad = cantidad;
+        Subtotal = subtotal;
+    }
 
-public ProductosPorFactura(int? cantidad=null,double? subtotal=null)
-{
-    Cantidad = cantidad;
-    Subtotal = subtotal;
-}
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int Id { get; set; }
+
+    [ForeignKey("Producto")] public int ProductoId { get; set; }
+
+    public Producto? Producto { get; set; }
 
 // get y set para Cantidad 
-public int? Cantidad {get; set;}
+    public int? Cantidad { get; set; }
 
 // get y set para Subtotal
-public double? Subtotal  {get; set;}
-
-
-
-
-
-
-
-
-
-
-
+    public double? Subtotal { get; set; }
 }

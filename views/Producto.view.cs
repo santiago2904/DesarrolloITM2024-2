@@ -24,7 +24,7 @@ public class ProductoView
             Console.WriteLine("5. Salir");
             Console.Write("Seleccione una opción: ");
             var option = Console.ReadLine();
-             switch (option)
+            switch (option)
             {
                 case "1":
                     Console.WriteLine("Ingrese el nombre del producto:");
@@ -33,10 +33,10 @@ public class ProductoView
                     int stock = int.Parse(Console.ReadLine());
                     Console.WriteLine("Ingrese el valor unitario del producto:");
                     double valorunitario = double.Parse(Console.ReadLine());
-                    _productoService.CreateProducto( nombre, stock, valorunitario);
+                    _productoService.CreateProducto(nombre, stock, valorunitario);
                     break;
                 case "2":
-                    var prodcuto = _productoService.ReadProductos();
+                    var productos = _productoService.ReadProductos();
                     Console.WriteLine("Listado de Productos:");
                     foreach (var producto in productos)
                     {
@@ -70,4 +70,3 @@ public class ProductoView
         }
     }
 }
-
