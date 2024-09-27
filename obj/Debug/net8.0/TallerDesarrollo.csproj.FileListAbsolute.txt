@@ -128,3 +128,12 @@
 /home/sapalacioa/Documents/proyectos/ITM/TallerDesarrollo/obj/Debug/net8.0/TallerDesarrollo.pdb
 /home/sapalacioa/Documents/proyectos/ITM/TallerDesarrollo/obj/Debug/net8.0/TallerDesarrollo.genruntimeconfig.cache
 /home/sapalacioa/Documents/proyectos/ITM/TallerDesarrollo/obj/Debug/net8.0/ref/TallerDesarrollo.dll
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\TallerDesarrollo.csproj.AssemblyReference.cache
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\TallerDesarrollo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\TallerDesarrollo.AssemblyInfoInputs.cache
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\TallerDesarrollo.AssemblyInfo.cs
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\TallerDesarrollo.csproj.CoreCompileInputs.cache
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\TallerDesarrollo.sourcelink.json
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\TallerDesarrollo.dll
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\refint\TallerDesarrollo.dll
+C:\Users\dhzea\Desktop\C#\Proyecto Programacion\DesarrolloITM2024-2\obj\Debug\net8.0\TallerDesarrollo.pdb

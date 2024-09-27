@@ -67,7 +67,7 @@ public class VendedorService
         }
     }
 
-    public void DeleteCliente(int codigo)
+    public void DeleteVendedor(int codigo)
     {
         try
         {
