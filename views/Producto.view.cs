@@ -17,7 +17,7 @@ public class ProductoView
             Console.WriteLine("2. Listar Productos");
             Console.WriteLine("3. Actualizar Producto");
             Console.WriteLine("4. Eliminar Producto");
-            Console.WriteLine("0. Salir");
+            Console.WriteLine("5. Salir");
             Console.Write("Seleccione una opción: ");
             option = int.Parse(Console.ReadLine() ?? "0");
 
@@ -35,7 +35,7 @@ public class ProductoView
                 case 4:
                     DeleteProducto();
                     break;
-                case 0:
+                case 5:
                     Console.WriteLine("Saliendo...");
                     break;
                 default:
