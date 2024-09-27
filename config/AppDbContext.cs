@@ -13,6 +13,9 @@ public class AppDbContext : DbContext
     public DbSet<Cliente> Clientes { get; set; } // Tabla Clientes
     public DbSet<Vendedor> Vendedores { get; set; } // Tabla Vendedor
     public DbSet<Empresa> Empresas { get; set; } // Tabla Empresas
+    public DbSet<Factura> Facturas { get; set; } // Tabla Factura
+    public DbSet<Producto> Productos { get; set; } // Tabla Productos
+    public DbSet<FacturaProducto> FacturaProductos { get; set; } // Tabla FacturaProductos
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -27,11 +30,16 @@ public class AppDbContext : DbContext
     {
         modelBuilder.Entity<Cliente>()
             .Property(c => c.Credito)
-            .HasColumnType("decimal(18,2)"); 
+            .HasColumnType("decimal(18,2)");
         // Especifica precisión y escala
         modelBuilder.Entity<Cliente>()
             .HasOne(c => c.Empresa)
             .WithMany() // Asegúrate de que aquí se ajuste si hay una colección de Clientes en Empresa
             .HasForeignKey(c => c.EmpresaCodigo);
+        
+        modelBuilder.Entity<FacturaProducto>()
+            .HasOne(fp => fp.Factura)
+            .WithMany(f => f.FacturaProductos)
+            .HasForeignKey(fp => fp.FacturaId);
     }
 }

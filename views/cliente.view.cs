@@ -60,14 +60,7 @@ public class ClienteView
                     Console.WriteLine("Listado de Clientes:");
                     foreach (var cliente in clientes)
                     {
-                        var empresaCliente = _empresaService.ReadEmpresas().FirstOrDefault(e => e.Codigo == cliente.EmpresaCodigo);
-                        Console.WriteLine(
-                            $"Código: {cliente.Codigo}, " +
-                            $"Email: {cliente.Email}," +
-                            $" Nombre: {cliente.Nombre}, " +
-                            $"Apellido: {cliente.Apellido}," +
-                            $" Crédito: {cliente.Credito}," +
-                            $" Empresa: {empresaCliente?.Nombre}");
+                        Console.WriteLine(_clienteService.GetInfoPersona(cliente));
                     }
 
                     break;
