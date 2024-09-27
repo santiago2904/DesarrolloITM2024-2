@@ -3,7 +3,7 @@ using TallerDesarrollo.models;
 
 namespace TallerDesarrollo.services;
 
-public class ClienteService
+public class ClienteService : IPersona
 {
     private readonly AppDbContext _context;
 
@@ -20,9 +20,11 @@ public class ClienteService
             {
                 throw new ArgumentException("El nombre no puede estar vacío.");
             }
-            
+
             var cliente = new Cliente
-                { Email = email, Nombre = nombre, Apellido = apellido, Credito = credito, EmpresaCodigo = empresaCodigo};
+            {
+                Email = email, Nombre = nombre, Apellido = apellido, Credito = credito, EmpresaCodigo = empresaCodigo
+            };
 
             _context.Clientes.Add(cliente);
             _context.SaveChanges();
@@ -85,6 +87,19 @@ public class ClienteService
         catch (Exception ex)
         {
             Console.WriteLine($"Error al eliminar el cliente: {ex.Message}");
+        }
+    }
+
+    public string GetInfoPersona(Persona persona)
+    {
+        if (persona is Cliente cliente)
+        {
+            return $"Codigo: {cliente.Codigo}  Nombre: {cliente.Nombre} {cliente.Apellido}, Email: {cliente.Email}," +
+                   $" Empresa: {cliente.EmpresaCodigo}, Crédito: {cliente.Credito}";
+        }
+        else
+        {
+            return $"Codigo: {persona.Codigo}  Nombre: {persona.Nombre} {persona.Apellido}, Email: {persona.Email}";
         }
     }
 }

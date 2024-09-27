@@ -3,22 +3,22 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TallerDesarrollo.models;
 
-public class Persona
+public class Producto
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Codigo { get; set; }
-    
-    public string? Email { get; set; }
-    
-    public string? Nombre { get; set; }
-    
-    public string? Apellido { get; set; }
 
-    public Persona(string? email = null, string? nombre = null, string? apellido = null)
+    public string? Nombre { get; set; }
+
+    public int? Stock { get; set; }
+
+    public double? Valorunitario { get; set; }
+
+    public Producto(string? nombre = null, int? stock = null, double? valorunitario = null)
     {
-        Email = email;
         Nombre = nombre;
-        Apellido = apellido;
+        Stock = stock;
+        Valorunitario = valorunitario;
     }
 }
